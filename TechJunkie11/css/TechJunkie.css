@@ -14,6 +14,17 @@
 /* Top Elements */
 * { margin: 0; padding: 0; outline: 0 }
 
+#demobtn, #b1 {
+	margin: 20px 0 0 0;
+	width: auto; 
+	text-align: center;
+	background-color: #f3ebe0;
+	margin-left: 75px;
+	font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-serif;
+	font-weight: Bold;
+	font-size: 1.5em;
+}
+
 body {
 	background: #f3ebe0 url(../images/bg.gif) repeat-x;
 	font: 12px/170% 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -265,25 +276,25 @@ input.button {
 }
 
 /* Navigation */
-#nav {
+.nav {
 	clear: both;	
 	padding: 0;	margin: 0;
 	width: 920px;
 	height: 50px;
 	background: #0e609e url(../images/nav.gif) no-repeat;		
 }
-#nav ul {
+.nav ul {
 	float: left;
 	list-style: none;	
 	margin: 0;
 	padding: 0 0 0 40px;			
 	height: 50px;	
 }
-#nav ul li {
+.nav ul li {
 	display: inline;
 	margin: 0; padding: 0;
 }
-#nav ul li a {
+.nav ul li a {
 	display: block;
 	float: left;
 	width: auto;
@@ -294,11 +305,11 @@ input.button {
 	text-decoration: none;	
 	letter-spacing: -0.5px;
 }
-#nav ul li a:hover, 
-#nav ul li a:active {
+.nav ul li a:hover, 
+.nav ul li a:active {
 	color: #edf8c7;	
 }
-#nav ul li#current a {	
+.nav ul li#current a {	
 	background: #0c4e80 url(../images/pointer.gif) no-repeat center bottom;	
 	color: #93DAFF;
 }

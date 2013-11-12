@@ -43,7 +43,7 @@
 	</div>
 		
 	<div class="mask">
-		<ul id="webticker">
+		<ul class="webticker step1">
 			<li>News Item 1</li>
 			<li>News Item 2</li>
 			<li>News Item 3</li>
@@ -57,12 +57,12 @@
 		</ul>
 	</div>
 	<!-- navigation starts-->	
-	<div  id="nav">
+	<div  class="nav">
 		<ul>
 			<li id="current"><a href="index.html">Home</a></li>
 			<li><a href="style.html">Style Demo</a></li>
 			<li><a data-href="#TemplateInfo" href="#">Template Info</a></li>
-			<li><a data-href="#LoremIpsum" href="#">Lorem Ipsum Dolor Sit Amet</a></li>
+			<li ><a class="step2" data-href="#LoremIpsum" href="#">Lorem Ipsum Dolor Sit Amet</a></li>
 			<li><a data-href="#AliquamRisus" href="#">Aliquam Risus Justo</a></li>
 			<li><a data-href="#Images" href="#">Images</a></li>		
 		</ul>
@@ -148,7 +148,7 @@
 
 			
 			<h2 id="Images">Images</h2>
-			<a href="img/3dimage.jpg" data-lightbox="images"><img src="img/3dimagethumb.jpg"/></a>
+			<a class="step6" href="img/3dimage.jpg" data-lightbox="images"><img src="img/3dimagethumb.jpg"/></a>
 			<a href="img/Evo.jpg" data-lightbox="images"><img src="img/Evothumb.jpg"/></a>
 			<a href="img/eye.jpg" data-lightbox="images"><img src="img/eyethumb.jpg"/></a>
 			<a href="img/mudcar.jpg" data-lightbox="images"><img src="img/mudcarthumb.jpg"/></a>
@@ -162,7 +162,7 @@
 				
 		<div id="sidebar">
 			
-			<input type="button" id="demobtn" value="Quick Demo">Quick Demo</input>
+			<input type="button" id="demobtn" value="Quick Demo"></input>
 			
 			<h3>Sign-Up</h3>
 			<form class="cmxform" id="commentForm" method="get" action="">
@@ -170,11 +170,11 @@
 				<legend>Please provide your name and email address (won't be published)</legend>
 				<p>
 				  <label for="cname">Name (required, at least 2 characters)</label>
-				  <input id="cname" name="name" minlength="2" type="text" required />
+				  <input id="cname" name="name" class="step4" minlength="2" type="text" required />
 				</p>
 				<p>
 				  <label for="cemail">E-Mail (required)</label>
-				  <input id="cemail" type="email" name="email" required />
+				  <input id="cemail" type="email" name="email" class="step5" required />
 				</p>
 				<p>
 				  <label for="cpassword">Password (required)</label>
@@ -235,7 +235,7 @@
 			<form class="searchform" action="index.html" method="get">
 				<p>
 				<input name="search_query" class="textbox" type="text" />
-  				<input name="search" class="button" value="Search" type="submit" />
+  				<input name="search" class="input" value="Search" type="submit" />
 				</p>			
 			</form>	
 				
@@ -252,7 +252,7 @@
 			<a href="http://www.styleshout.com/">donate link</a> on my website - it will 
 			be a great help and will surely be appreciated.</p>		
 
-			<button id="b1">Back to Top</button>
+			<input type="button" id="b1" class="step3" value="Back to Top"></input>
 						
 		<!-- sidebar ends -->		
 		</div>		
@@ -299,9 +299,9 @@
 		<!-- footer-columns ends -->
 		</div>	
 	
-		<div id="footer-bottom">
+		<div id="footer-bottom" class="step7">
 			<p>
-			&copy; 2010 <strong>Your Company</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+			&copy; 2013 <strong>Colletti Productions</strong> &nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="http://www.bluewebtemplates.com/" title="Website Templates">website templates</a> by <a href="http://www.styleshout.com/">styleshout</a> |
 			Valid <a href="http://validator.w3.org/check?uri=referer">XHTML</a> | 
 			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>

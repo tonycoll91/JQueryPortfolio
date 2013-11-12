@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	var trip = new Trip([
 		{
-			sel : $(".webticker.step1"),
+			sel : $(".step1"),
 			position : 'n', 
 			content : "This is a webTicker that displays any info you want",
 			delay : 4000
@@ -20,6 +20,12 @@ $(document).ready(function(){
 			delay : 4000
 		}, 
 		{
+			sel : $(".step8"),
+			position : 'n',
+			content : "Or if you want you can just click on the subheadings to pop back up to the top",
+			delay : 4000,
+		},
+		{
 			sel : $(".step4"),
 			position : 'w',
 			content : "Name validation",
@@ -33,7 +39,7 @@ $(document).ready(function(){
 		},
 		{
 			sel : $(".step6"),
-			position : 'e',
+			position : 'w',
 			content : "Click an image to display a lightbox display",
 			delay : 3000
 		},
@@ -59,7 +65,7 @@ $(document).ready(function(){
 	
 	$("#commentForm").validate();
 	
-	$("input#b1").on("click", function(){
+	$("input#b1, h2").on("click", function(){
 		$("body").animatescroll({scrollSpeed:1500,easing:'easeOutBounce'});
 	});
 	

@@ -73,10 +73,6 @@ $(document).ready(function(){
 		$($(this).data("href")).animatescroll({scrollSpeed:2000,easing:'easeInOutBack'});
 	});
 	
-	/*$("#commentForm.attr(type)").on("click", function(){
-		$(this).parent().toggle("fold");  
-	});*/
-	
 	$("ul.webticker").webTicker();
 
 

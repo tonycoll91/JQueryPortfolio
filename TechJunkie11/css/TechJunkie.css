@@ -14,6 +14,11 @@
 /* Top Elements */
 * { margin: 0; padding: 0; outline: 0 }
 
+#demobtn {
+	position: absolute;
+	top: 75px;
+	left: 600px;
+}
 #demobtn, #b1 {
 	margin: 20px 0 0 0;
 	width: auto; 
@@ -29,12 +34,54 @@
 	box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
 }
 
-#demobtn:hover, #b1:hover{
-	background-color: rgba(243,235,224,0.7);
+.button-style {
+	-moz-box-shadow:inset 0px 1px 10px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 10px 0px #cae3fc;
+	box-shadow:inset 0px 1px 10px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color:#3d94f6;
+	-webkit-border-top-left-radius:11px;
+	-moz-border-radius-topleft:11px;
+	border-top-left-radius:11px;
+	-webkit-border-top-right-radius:11px;
+	-moz-border-radius-topright:11px;
+	border-top-right-radius:11px;
+	-webkit-border-bottom-right-radius:11px;
+	-moz-border-radius-bottomright:11px;
+	border-bottom-right-radius:11px;
+	-webkit-border-bottom-left-radius:11px;
+	-moz-border-radius-bottomleft:11px;
+	border-bottom-left-radius:11px;
+	text-indent:0;
+	border:1px solid #1e62d0;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	font-style:italic;
+	height:40px;
+	width:117px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #287ace;
+}
+.button-style:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}
+
+.button-style:active {
+	position:relative;
+	top:1px;
 }
 
 body {
-	background: #f3ebe0 url(../images/bg.gif) repeat-x;
+	background: #f3ebe0 url(../img/bg.gif) repeat-x;
 	font: 12px/170% 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	color: #666666; 
 	text-align: center;	
@@ -130,7 +177,7 @@ blockquote {
 	font-family: Georgia, 'Times New Roman', Times, serif;		
 	color: #80614D;	
 	border: 1px solid #DFF4B5; 
-	background: #F0FFD2 url(../images/quote.gif) no-repeat 7px 10px;
+	background: #F0FFD2 url(../img/quote.gif) no-repeat 7px 10px;
 }
 
 /* start - table */
@@ -209,7 +256,7 @@ input.button {
 #wrap {
 	position: relative;
 	width: 920px;
-	background: #edf8c7 url(../images/wrap.gif) repeat-y center top;
+	background: #edf8c7 url(../img/wrap.gif) repeat-y center top;
 	margin: 35px auto;
 	text-align: left;	
 }
@@ -219,13 +266,13 @@ input.button {
 	float: left;	
 	width: 920px;	
 	padding: 25px 0; 	
-	background: #edf8c7 url(../images/content.gif) repeat-y;	
+	background: #edf8c7 url(../img/content.gif) repeat-y;	
 }
 #header {
 	position: relative;
 	width: 920px;
 	height: 205px;
-	background: #317cb1 url(../images/header.gif) no-repeat;	
+	background: #317cb1 url(../img/header.gif) no-repeat;	
 	color: #fff;	
 	padding: 0;	
 	margin: 0;
@@ -259,7 +306,7 @@ input.button {
 	padding: 0; margin: 0;
 	border: none;
 	width: 223px; height: 33px;
-	background: #82c7f4 url(../images/header-search.gif) no-repeat;	
+	background: #82c7f4 url(../img/header-search.gif) no-repeat;	
 	z-index: 999999;
 }
 #header form#quick-search p {
@@ -289,7 +336,7 @@ input.button {
 	padding: 0;	margin: 0;
 	width: 920px;
 	height: 50px;
-	background: #0e609e url(../images/nav.gif) no-repeat;		
+	background: #0e609e url(../img/nav.gif) no-repeat;		
 }
 .nav ul {
 	float: left;
@@ -318,7 +365,7 @@ input.button {
 	color: #edf8c7;	
 }
 .nav ul li#current a {	
-	background: #0c4e80 url(../images/pointer.gif) no-repeat center bottom;	
+	background: #0c4e80 url(../img/pointer.gif) no-repeat center bottom;	
 	color: #93DAFF;
 }
 
@@ -342,7 +389,7 @@ input.button {
 	text-decoration: none;		
 }
 #main ul li {
-	list-style-image: url(../images/bullet.gif);
+	list-style-image: url(../img/bullet.gif);
 }
 
 #sidebar {
@@ -422,11 +469,11 @@ input.button {
 	width: 920px;
 	text-align: left;
 	padding: 0;	margin: 0;
-	background: url(../images/footer-bottom.gif) no-repeat left bottom;		
+	background: url(../img/footer-bottom.gif) no-repeat left bottom;		
 }
 #footer-content {
 	width: 920px;
-	background: url(../images/footer-top-sep.gif) no-repeat;	
+	background: url(../img/footer-top-sep.gif) no-repeat;	
 	padding: 30px 0 35px 0;
 }
 

@@ -4,7 +4,7 @@
 
 <head>
 
-<title>TechJunkie</title>
+<title>Plugin Demo</title>
 
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
 <meta name="author" content="Erwin Aligam - styleshout.com" />
@@ -14,6 +14,20 @@
 <meta name="googlebot" content="noarchive" />
 
 <link rel="stylesheet" href="css/TechJunkie.css" type="text/css" />
+<link href="css/lightbox.css" rel="stylesheet" />
+<link href="css/assets/webticker.css" rel="stylesheet" />
+<link href="css/trip.min.css" rel="stylesheet"/>
+
+<link rel="icon" type="image" href="img/favicon.ico" />
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/animatescroll.js"></script>
+<script src="js/lightbox-2.6.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/jquery.webticker.min.js"></script>
+<script src="js/trip.min.js"></script>
+<script src="js/TechJunkie11.js"></script>
 
 </head>
 
@@ -24,29 +38,35 @@
 	<!--header -->
 	<div id="header">			
 				
-		<h1 id="logo-text"><a href="index.html" title="">techjunkie</a></h1>		
-		<p id="slogan">put your site slogan here...</p>		
-			
-		<form id="quick-search" action="index.html" method="get" >
-			<p>
-			<label for="qsearch">Search:</label>
-			<input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
-			<input class="btn" alt="Search" type="image" name="searchsubmit" title="Search" src="images/search.gif" />
-			</p>
-		</form>	
+		<h1 id="logo-text"><a href="index.html" title="">Antonino Colletti Portfolio</a></h1>		
+		<p id="slogan">Check out what I can do...</p>		
+		
+		<input type="button" id="demobtn" class="button-style" value="Quick Demo"></input>
 			
 	<!--header ends-->					
 	</div>
-		
+	
+	<!--webticker begin-->
+	<div class="mask step1">
+		<ul class="webticker">
+			<li>Born on October 17, 1991.</li>
+			<li>I speak 3 Languages, Italian, Spanish, and English, in that order.</li>
+			<li>I like to help people.</li>
+			<li>Future goals include having a family,</li>
+			<li>getting a good job in my field of study, creating something that people will remember me by.</li>
+		</ul>
+	</div>
+	<!--webticker ends-->
+	
 	<!-- navigation starts-->	
-	<div  id="nav">
+	<div  class="nav">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li id="current"><a href="style.html">Style Demo</a></li>
-			<li><a href="index.html">Downloads</a></li>
-			<li><a href="index.html">Services</a></li>
-			<li><a href="index.html">Support</a></li>
-			<li><a href="index.html">About</a></li>		
+			<li id="current"><a href="index.html">Home</a></li>
+			<li><a href="style.html">My Resume</a></li>
+			<li><a data-href="#AboutMe" href="#">About Me</a></li>
+			<li ><a class="step2" data-href="#Inspirations" href="#">Inspirations</a></li>
+			<li><a data-href="#Hobbies" href="#">Hobbies</a></li>
+			<li><a data-href="#Images" href="#">Images</a></li>		
 		</ul>
 	<!-- navigation ends-->	
 	</div>					
@@ -201,44 +221,50 @@
 				
 		<div id="sidebar">
 			
-			<h3>Sidebar Menu</h3>
-			<ul class="sidemenu">				
-				<li><a href="index.html">Home</a></li>
-				<li><a href="index.html#TemplateInfo">TemplateInfo</a></li>
-				<li><a href="style.html">Style Demo</a></li>
-				<li><a href="http://www.styleshout.com/">More Free Templates</a></li>	
-				<li><a href="http://www.dreamtemplate.com" title="Web Templates">Web Templates</a></li>
-			</ul>	
-				
-			<h3>Links</h3>
-			<ul class="sidemenu">
-				<li><a href="http://www.freephotos.se/">FreePhotos.se</a></li>
-				<li><a href="http://www.alistapart.com">Alistapart</a></li>					
-				<li><a href="http://www.cssremix.com">CSS Remix</a></li>
-				<li><a href="http://www.cssmania.com/">CSS Mania</a></li>				
-			</ul>
+			<div class="sidemenu">
+				<h3>Sidebar Menu</h3>
+				<ul class="sidemenu">				
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#TemplateInfo">TemplateInfo</a></li>
+					<li><a href="style.html">Style Demo</a></li>
+					<li><a href="http://www.styleshout.com/">More Free Templates</a></li>	
+					<li><a href="http://www.dreamtemplate.com" title="Web Templates">Web Templates</a></li>
+				</ul>	
+			</div>
 			
-			<h3>Sponsors</h3>
-			<ul class="sidemenu">
-                <li><a href="http://www.dreamtemplate.com" title="Website Templates">DreamTemplate <br />
-                <span>Over 6,000+ Premium Web Templates</span></a>
-                </li>
-                <li><a href="http://www.themelayouts.com" title="WordPress Themes">ThemeLayouts <br />
-                <span>Premium WordPress &amp; Joomla Themes</span></a>
-                </li>
-                <li><a href="http://www.imhosted.com" title="Website Hosting">ImHosted.com <br />
-                <span>Affordable Web Hosting Provider</span>
-                </a></li>
-                <li><a href="http://www.dreamstock.com" title="Stock Photos">DreamStock <br />
-                <span>Download Amazing Stock Photos</span></a>
-                </li>
-                <li><a href="http://www.evrsoft.com" title="Website Builder">Evrsoft <br />
-                <span>Website Builder Software &amp; Tools</span></a>
-                </li>
-                <li><a href="http://www.webhostingwp.com" title="Web Hosting">Web Hosting <br />
-                <span>Top 10 Hosting Reviews</span></a>
-                </li>
-			</ul>
+			<div class="sidemenu">			
+				<h3>Links</h3>
+				<ul class="sidemenu">
+					<li><a href="http://www.freephotos.se/">FreePhotos.se</a></li>
+					<li><a href="http://www.alistapart.com">Alistapart</a></li>					
+					<li><a href="http://www.cssremix.com">CSS Remix</a></li>
+					<li><a href="http://www.cssmania.com/">CSS Mania</a></li>				
+				</ul>
+			</div>
+			
+			<div class="sidemenu">
+				<h3>Sponsors</h3>
+				<ul class="sidemenu">
+					<li><a href="http://www.dreamtemplate.com" title="Website Templates">DreamTemplate <br />
+					<span>Over 6,000+ Premium Web Templates</span></a>
+					</li>
+					<li><a href="http://www.themelayouts.com" title="WordPress Themes">ThemeLayouts <br />
+					<span>Premium WordPress &amp; Joomla Themes</span></a>
+					</li>
+					<li><a href="http://www.imhosted.com" title="Website Hosting">ImHosted.com <br />
+					<span>Affordable Web Hosting Provider</span>
+					</a></li>
+					<li><a href="http://www.dreamstock.com" title="Stock Photos">DreamStock <br />
+					<span>Download Amazing Stock Photos</span></a>
+					</li>
+					<li><a href="http://www.evrsoft.com" title="Website Builder">Evrsoft <br />
+					<span>Website Builder Software &amp; Tools</span></a>
+					</li>
+					<li><a href="http://www.webhostingwp.com" title="Web Hosting">Web Hosting <br />
+					<span>Top 10 Hosting Reviews</span></a>
+					</li>
+				</ul>
+			</div>
 			
 			<h3>Search Box</h3>	
 			<form class="searchform" action="index.html" method="get">
